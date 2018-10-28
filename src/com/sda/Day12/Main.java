@@ -8,6 +8,9 @@ public class Main {
         dictionary.addWord("pies", "dog");
         dictionary.addWord("kot", "cat");
         dictionary.addWord("śmigłowiec", "helicopter");
+        dictionary.addWord("silnik", "engine");
+        dictionary.addWord("silnik", "");
+        dictionary.addWord(" ", "engi");
 
 
         dictionary.show();
@@ -16,14 +19,17 @@ public class Main {
         dictionary.getTranslation("pies");
         dictionary.getTranslation("cat");
 
-        dictionary.edit("pieseł", "dog");
-        dictionary.edit("kot", "catty");
+        dictionary.edit("pies","pieseł", "dog");
+        dictionary.edit("kot", "kot", "catty");
 
         dictionary.show();
 
         dictionary.remove("kot");
 
         dictionary.show();
+
+        System.out.println("All: " + dictionary.getAllPl());
+        System.out.println("All translations: " + dictionary.getAllTranslations());
 
     }
 }
