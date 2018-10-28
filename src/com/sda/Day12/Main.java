@@ -11,5 +11,9 @@ public class Main {
 
 
         dictionary.show();
+
+        System.out.println("\nTlumaczenia:");
+        dictionary.getTranslation("pies");
+        dictionary.getTranslation("cat");
     }
 }
