@@ -60,8 +60,10 @@ public class Main {
 
         multiDictionary.show();
 
-        System.out.print("\nFragment \"ow\" pasuje do: ");
 
-        multiDictionary.search("ow");
+        String wyrazenie = "ow";
+        System.out.print("\nFragment \"" + wyrazenie + "\" pasuje do: ");
+
+        multiDictionary.search(wyrazenie);
     }
 }
