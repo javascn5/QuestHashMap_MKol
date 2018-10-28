@@ -15,5 +15,15 @@ public class Main {
         System.out.println("\nTlumaczenia:");
         dictionary.getTranslation("pies");
         dictionary.getTranslation("cat");
+
+        dictionary.edit("pieseł", "dog");
+        dictionary.edit("kot", "catty");
+
+        dictionary.show();
+
+        dictionary.remove("kot");
+
+        dictionary.show();
+
     }
 }

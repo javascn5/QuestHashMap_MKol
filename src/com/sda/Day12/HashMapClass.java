@@ -36,4 +36,18 @@ public class HashMapClass {
             }
         }
     }
+
+    //edytowanie tłumaczeń
+
+    void edit(String polish, String english){       //key, value
+        if(dictionary.containsKey(polish) || dictionary.containsValue(english)){
+            dictionary.replace(polish, english);
+        }
+    }
+
+    void remove(String key){
+        if(dictionary.containsKey(key) || dictionary.containsValue(key)){
+            dictionary.remove(key);
+        }
+    }
 }
