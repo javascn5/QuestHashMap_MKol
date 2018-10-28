@@ -59,5 +59,9 @@ public class Main {
         multiDictionary.edit("owoc", "owocek", Arrays.asList("fruitos"));
 
         multiDictionary.show();
+
+        System.out.print("\nFragment \"ow\" pasuje do: ");
+
+        multiDictionary.search("ow");
     }
 }

@@ -69,4 +69,12 @@ public class MultiTranslation {
         return multiDictionary.get(polish);
     }
 
+    void search(String string){
+        for (String key : multiDictionary.keySet()) {
+            if (key.matches("(.*)" + string + "(.*)")) {
+                System.out.print(key + " | ");
+            }
+        }
+    }
+
 }
